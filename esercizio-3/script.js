@@ -5,17 +5,12 @@ var array = ["Mario", "Pippo", "Andrea"];
 var nome = prompt("Come ti chiami?");
 nome = nome.charAt(0).toUpperCase() + nome.slice(1);
 
-var controllo = false;
+var messaggio = "non puoi partecipare alla festa";
 
 for(var i = 0; i < array.length; i++) {
   if(array[i] == nome) {
-    controllo = true;
+    messaggio = "puoi partecipare alla festa";
   }
 }
 
-if(controllo) {
-  console.log("puoi partecipare alla festa");
-}
-else {
-  console.log("non puoi partecipare alla festa");
-}
+console.log(messaggio);
