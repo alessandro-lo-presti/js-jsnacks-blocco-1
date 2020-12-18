@@ -6,8 +6,8 @@ var nome = prompt("Come ti chiami?");
 nome = nome.charAt(0).toUpperCase() + nome.slice(1);
 
 if(array.indexOf(nome) >= 0) {
-  console.log("puoi partecipare alla festa")
+  console.log("puoi partecipare alla festa");
 }
 else {
-  console.log("non puoi partecipare alla festa")
+  console.log("non puoi partecipare alla festa");
 }
